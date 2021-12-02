@@ -14,7 +14,11 @@ ifconfig -a
 
 ``
 ifconfig eth0 10.0.40.164 netmask 255.255.254.0 up
+
 ip addr add 10.0.40.0/23 dev eth0
+
 ip link set dev eth0 up
+
 ip route add default via 10.0.40.1 dev eth0
+
 ``
