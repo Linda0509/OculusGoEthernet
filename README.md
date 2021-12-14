@@ -23,3 +23,12 @@ ip link set dev eth0 up
 ip route add default via 10.0.40.1 dev eth0
 
 ```
+
+##### 4、enable socket by ip rule
+
+
+```
+ip rule del table main
+
+ip rule add from all lookup main
+```
